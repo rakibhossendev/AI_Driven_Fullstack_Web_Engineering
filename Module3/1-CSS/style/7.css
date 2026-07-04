@@ -1,0 +1,18 @@
+.blog{
+    background-color: chocolate;
+    width: 400px;
+    margin: 20px;
+    box-shadow: -10px 25px 100px black;
+}
+#header{
+    background-color: #9fecc6;
+    height: 300px;
+    background-image: url("../img/cartoon.jpeg");
+    height: 1200px;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: center;
+}   
+#header h1{
+    text-align: center;
+}

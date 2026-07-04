@@ -1,0 +1,18 @@
+article{
+    background-color: orchid;
+
+}
+h2{
+    text-align: center;
+}
+#secound-article{
+    /* display: none; */
+    visibility: hidden;
+}
+span{
+    color: chocolate;
+    display: inline-block;
+    height: 60px;
+    width: 100px;
+    border: 2px solid red;
+}
