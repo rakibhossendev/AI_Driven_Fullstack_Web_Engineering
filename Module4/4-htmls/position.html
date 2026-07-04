@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+
+    <style>
+        .container{
+            position: relative;
+            border: 3px solid red;
+        }
+        .container div{
+            border: 2px dotted purple;
+            width: 200px;
+        }
+        /*.ring{
+            position: relative;
+            top: -50px;
+        }*/
+        .ring{
+            position: absolute;
+            top: 50px;
+            right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Static</li>
+        <li>Relative</li>
+        <li>Absulate</li>
+        <li>Sticky</li>
+        <li>Fixed</li>
+    </ul>
+
+    <div class="container">
+        <div class="boy">
+            <img src="img/boy (1).svg" alt="">
+        </div>
+        <div class="ring">
+            <img src="img/ring.svg" alt="">
+        </div>
+
+        <div class="water">
+            <img src="img/water.svg" alt="">
+        </div>
+    </div>
+</body>
+</html>
