@@ -1,0 +1,12 @@
+// Task 10 — Using Break 
+// Write a for loop from 1 to 50 that stops completely (break) as soon as it reaches a number greater than 30.
+
+let i = 0;
+while(i <= 50){
+    if(i>30){
+        break
+    }
+    console.log(i)
+
+    i += 1
+}
