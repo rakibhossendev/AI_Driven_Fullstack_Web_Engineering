@@ -1,8 +1,3 @@
-let shippingFee = (orderAmmount=60,ammount) => {
-    if(ammount >= 1000){
-        return "Free shipping";
-    }
-    return`Shipping Fee: ${orderAmmount}`;
-}
+let shippingFee = (ammount,orderAmmount=60) => ammount >= 1000 ? "Free Shipping":`Shipping Fee: ${orderAmmount} Taka.`;
 
-console.log()
+console.log(shippingFee(100,100))
