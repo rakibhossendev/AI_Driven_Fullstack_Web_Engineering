@@ -10,6 +10,9 @@ interface Admin extends User{
 interface Moderator extends User{
     moderatorPermission: string[];
 }
+
+
+
 const Meghla: Admin = {
     name: "Meghla",
     role: "Admin",
