@@ -19,6 +19,12 @@ class User{
 }
 
 class Student extends User{
+    fee: number
 
+    constructor(name: string, age: number, email: string, fee: number){
+        super(name,age,email)
+        this.fee = fee
+    }
 }
-const MAFUZA = new Student("Mafuza",18,"megh@gmail.com")
+const MAFUZA = new Student("Mafuza",18,"megh@gmail.com",100)
+console.log(MAFUZA);
