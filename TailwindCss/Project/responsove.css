@@ -1,0 +1,15 @@
+.demo-res {
+    color: rebeccapurple;
+    font-size: 60px;
+    background-color: aqua;
+    font-weight: bold;
+}
+
+@media (min-width: 400px) and (max-width: 800px) {
+    .demo-res {
+        color: rebeccapurple;
+        font-size: 30px;
+        background-color:bisque;
+        font-weight: bold;
+    }
+}
