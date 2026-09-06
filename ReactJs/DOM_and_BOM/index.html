@@ -4,19 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM and BOM Deep Drive</title>
+
+    <style>
+        .box{
+            border: 2px solid green;
+            border-radius: 10px;
+
+        }
+
+        .click-btn{
+            padding: 10px;
+            border-radius: 10px;
+            background-color: red;
+            color: white;
+        }
+
+    </style>
 </head>
 <body>
     
     <h1 id="bd-text">Hello, Bangladesh</h1>
     <h2>Hello, Programming Hero</h2>
-    <button>Login</button>
-    <input type="text">
 
-    <script>
-        const bdText = document.getElementById("bd-text");
-        console.log(bdText);
-        const h2 = document.getElementsByTagName('h2');
-        console.log(h2);
-    </script>
+    <img id="image" src="" alt="">
+
+    <br>
+    <h4 id="name"></h4>
+    <h4 id="age"></h4>
+
+    <br>
+    <button id="saveBtn">Save Text</button>
+    <input type="text" id="my-inp">
+
+    <p id="message"></p>
+
+    <br>
+    <button class="click-btn" id="btn">Click Me</button>
+    <button id="reload">Reload Page</button>
+    <script src="./script.js"></script>
 </body>
 </html>
