@@ -25,8 +25,8 @@ export default function SignUpPage() {
             password: inputFormData.password
         })
 
-        console.log(responseData, error);
-        // console.log(error);
+      
+        // (error);
     };
 
     const handleGoogleSignIn = async() => {
@@ -34,14 +34,14 @@ export default function SignUpPage() {
             provider: "google",
         })
 
-        console.log("after google signIn: ", responseData);
+
     }
 
     const handleGithubSignIn = async () => {
         const responseData = await signIn.social({
             provider: "github",
         })
-        console.log("github redirection : ",responseData)
+     
     }
     return (
         <section className="container mx-auto ">

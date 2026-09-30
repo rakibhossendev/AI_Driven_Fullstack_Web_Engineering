@@ -1,8 +1,8 @@
-export default function Dashboard(){
+export default function DashboardPage() {
 
-    return (
-        <section>
-            <h1 className="text-2xl font-bold">Dashboard here..</h1>
-        </section>
-    )
+  return (
+   <section>
+    <h1 className="text-2xl font-bold">Dashboard here..</h1>
+   </section>
+  );
 }

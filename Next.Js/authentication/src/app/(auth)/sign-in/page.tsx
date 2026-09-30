@@ -5,6 +5,7 @@ import { signIn } from "@/lib/auth-client";
 
 import { Eye, EyeSlash } from "@gravity-ui/icons";
 import { Button, FieldError, Form, Input, InputGroup, Label, TextField } from "@heroui/react";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function SignInPage() {
@@ -25,7 +26,7 @@ export default function SignInPage() {
       password: data.password,
       callbackURL: "/"
     })
-    console.log(responseData, error);
+
   };
 
   return (
@@ -92,6 +93,8 @@ export default function SignInPage() {
           Reset
         </Button>
       </div>
+
+      <p><small>Forgot password? <Link href="/forgot-password" className="text-blue-500">Click here</Link></small></p>
     </Form>
 
 

@@ -7,7 +7,6 @@ import Link from "next/link";
 export default function Navbar() {
   const { data: session, isPending } = useSession()
 
-  console.log(session);
   if(isPending){
     return <>
     <p>Loading..... </p>
@@ -80,6 +79,7 @@ export default function Navbar() {
           }
         </div>
 
+          <p className="text-bold text-black ">WELCOME, {session?.user.name}</p>
         {/* Right side */}
         <div className="hidden items-center gap-3 md:flex">
           {links}
