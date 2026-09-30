@@ -52,33 +52,32 @@ export default function Navbar() {
 
         {/* Navigation */}
         <div className="hidden items-center gap-8 md:flex">
-          <a
-            href="#"
+          <Link
+            href="/services"
             className="text-sm font-medium text-gray-700 transition hover:text-blue-600"
           >
-            Home
-          </a>
+            Services
+          </Link>
 
-          <a
-            href="#"
+          {
+            session?.user ?  <Link
+            href="/dashboard"
             className="text-sm font-medium text-gray-700 transition hover:text-blue-600"
           >
-            About
-          </a>
+            Dashboard
+          </Link>: ""
+          }
+          
 
-          <a
-            href="#"
+          {
+            session?.user ?  <Link
+            href="/profile"
             className="text-sm font-medium text-gray-700 transition hover:text-blue-600"
           >
-            Projects
-          </a>
+            Profile
+          </Link> : ""
 
-          <a
-            href="#"
-            className="text-sm font-medium text-gray-700 transition hover:text-blue-600"
-          >
-            Contact
-          </a>
+          }
         </div>
 
         {/* Right side */}

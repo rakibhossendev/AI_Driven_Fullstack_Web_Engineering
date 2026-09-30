@@ -7,6 +7,17 @@ const db = client.db("better-auth-db");
 
 
 export const auth = betterAuth({
+    baseURL: process.env.NEXT_PUBLIC_BETTER_AUTH_URL,
+    socialProviders:{
+        google:{
+            clientId: process.env.BETTER_AUTH_GOOGLE_CLIENT_ID as string,
+            clientSecret: process.env.BETTER_AUTH_GOOGLE_SECRET_KEY as string
+        },
+        github:{
+            clientId: process.env.BETTER_AUTH_GITHUB_CLIENT_ID as string,
+            clientSecret: process.env.BETTER_AUTH_GITHUB_SECRET_KEY as string,
+        }
+    },
     emailAndPassword: {
         enabled: true
     },
