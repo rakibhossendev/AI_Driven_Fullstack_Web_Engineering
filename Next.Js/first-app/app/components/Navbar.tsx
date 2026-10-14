@@ -1,15 +1,19 @@
+"use client"
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+    const usePathaname = usePathname()
 
     const links = <>
-    <li><Link href="/docs">Docs</Link></li>
-    <li><Link href="/showcase">ShowCase</Link></li>
-    <li><Link href="/blog">Blogs</Link></li>
+    <li><Link className={usePathaname === '/docs' ? "text-blue-400":""} href="/docs">Docs</Link></li>
+    <li><Link className={usePathaname === '/showcase' ? "text-blue-400":""} href="/showcase">ShowCase</Link></li>
+    <li><Link className={usePathaname === '/blog' ? "text-blue-400":""} href="/blog">Blogs</Link></li>
+    <li><Link className={usePathaname === '/dashboard' ? "text-blue-400":""} href="/dashboard">Dashboard</Link></li>
     
     </>
     return (
-        <div className="max-lg:collapse bg-base-200 lg:mb-48 shadow-sm w-full rounded-md">
+       <div className="max-lg:collapse bg-base-200 shadow-sm w-full rounded-md">
             <input id="navbar-1-toggle" className="peer hidden" type="checkbox" />
             <label htmlFor="navbar-1-toggle" className="fixed inset-0 hidden max-lg:peer-checked:block"></label>
             <div className="collapse-title navbar">

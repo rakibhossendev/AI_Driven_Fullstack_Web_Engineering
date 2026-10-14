@@ -1,0 +1,71 @@
+
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "React Dashboard",
+      "title": "Modern React Admin Dashboard",
+      "price": 49.99,
+      "description": "A modern and responsive admin dashboard built with React and TypeScript.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+      "rating": 4.8,
+      "stack": ["React", "TypeScript", "Tailwind CSS"],
+      "descriptions": "A powerful admin dashboard template designed for developers and businesses. It includes reusable components, responsive layouts, data visualization, and a clean user interface."
+    },
+    {
+      "id": 2,
+      "name": "Next Commerce",
+      "title": "Next.js E-commerce Template",
+      "price": 79.99,
+      "description": "A full-stack e-commerce template built with Next.js and modern web technologies.",
+      "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d",
+      "rating": 4.9,
+      "stack": ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL"],
+      "descriptions": "A professional e-commerce starter project featuring product listings, shopping cart functionality, responsive design, and scalable architecture for online stores."
+    },
+    {
+      "id": 3,
+      "name": "Developer Laptop",
+      "title": "High Performance Developer Laptop",
+      "price": 899.99,
+      "description": "A powerful laptop designed for programming, development, and everyday productivity.",
+      "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
+      "rating": 4.7,
+      "stack": ["Intel Core i7", "16GB RAM", "512GB SSD"],
+      "descriptions": "Built for developers who need reliable performance. This laptop is suitable for web development, coding, multitasking, and running development tools efficiently."
+    },
+    {
+      "id": 4,
+      "name": "Mechanical Keyboard",
+      "title": "RGB Mechanical Gaming Keyboard",
+      "price": 89.99,
+      "description": "A durable mechanical keyboard with RGB lighting and comfortable key switches.",
+      "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3",
+      "rating": 4.6,
+      "stack": ["Mechanical Switches", "RGB Lighting", "USB-C"],
+      "descriptions": "Designed for gamers and programmers, this mechanical keyboard provides a comfortable typing experience, customizable RGB lighting, and durable construction."
+    },
+    {
+      "id": 5,
+      "name": "Wireless Headphones",
+      "title": "Premium Wireless Noise Cancelling Headphones",
+      "price": 129.99,
+      "description": "Wireless headphones with immersive sound, noise cancellation, and long battery life.",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+      "rating": 4.8,
+      "stack": ["Bluetooth 5.3", "Noise Cancellation", "40-Hour Battery"],
+      "descriptions": "Enjoy high-quality audio and comfortable listening throughout the day. These headphones are ideal for music, online meetings, programming sessions, and travel."
+    },
+    {
+      "id": 6,
+      "name": "Smart Monitor",
+      "title": "27-inch 4K Ultra HD Monitor",
+      "price": 349.99,
+      "description": "A high-resolution 4K monitor designed for productivity, creative work, and entertainment.",
+      "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf",
+      "rating": 4.7,
+      "stack": ["4K UHD", "27-inch Display", "HDMI", "DisplayPort"],
+      "descriptions": "A sharp and vibrant monitor with a spacious display for multitasking, software development, graphic design, and multimedia consumption."
+    }
+  ]
+}
