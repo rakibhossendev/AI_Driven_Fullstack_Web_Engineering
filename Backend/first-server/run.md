@@ -1,0 +1,1 @@
+npx nodemon --exec npx tsx index.ts

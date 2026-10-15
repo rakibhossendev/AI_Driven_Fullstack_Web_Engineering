@@ -1,0 +1,20 @@
+{
+  "name": "first-server",
+  "version": "0.0.1",
+  "description": "This is my First node server !true",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "RAKIB HOSSEN",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^7.0.2"
+  }
+}
