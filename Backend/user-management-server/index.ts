@@ -1,4 +1,4 @@
-import express,{type Express, type Request, type Response} from "express"
+import express,{type Express, type Request, type Response} from "express" 
 import cors from "cors";
 
 const app: Express = express();
@@ -15,13 +15,19 @@ const users = [
     {id: 4,name: "MD. ABIR HASAN",email: "dev.abir.hasan@gmail.com"}
 ]
 
-app.post("/users",(request,response)=>{
-    response.send({success: true,message: "User added successfully"})
-    const user = request.body;
-    const newUser.id = users.length + 1;
-    users.push(newUsers);
-    console.log(request.body)
-})
+app.post("/users", (request, response) => {
+  const user = request.body;
+  
+  const newUser = {
+    id: users.length + 1,
+    ...user
+  };
+
+  users.push(newUser);
+  console.log(request.body);
+
+  response.send({ success: true, message: "User added successfully" });
+});
 
 app.get("/",(request: Request,response: Response) => {
     response.send("User is coming soon...");
